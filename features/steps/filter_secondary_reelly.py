@@ -1,5 +1,5 @@
 from behave import given, when, then
-from selenium import webdriver
+#from selenium import webdriver
 from pages.login_page import LoginPage
 from pages.secondary_page import SecondaryPage
 from pages.Application import Application
@@ -7,7 +7,7 @@ from pages.Application import Application
 
 @given('Open the Reelly main page')
 def step_open_main_page(context):
-    context.driver = webdriver.Chrome()
+    #context.driver = webdriver.Chrome()
     context.driver.maximize_window()
     context.driver.get('https://soft.reelly.io')
     context.app = Application(context.driver)
